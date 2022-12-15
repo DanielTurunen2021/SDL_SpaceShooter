@@ -6,10 +6,12 @@
 struct Player 
 {
 
-	float xPos = 800.f / 2 - (100.f / 2);;
-	float yPos = 150.f;
-	float Width = 100.f;;
-	float Height = 40.f;;
+	float xPos = 800 - 100;
+	float yPos = 1000.f;
+	float Width = 100.f;
+	float Height = 40.f;
+	float movementSpeed = 1000.f;
+	bool isActive = true;
 
 
 	
@@ -18,3 +20,5 @@ struct Player
 	void Update();
 	void Draw();
 };
+
+extern Player player;
